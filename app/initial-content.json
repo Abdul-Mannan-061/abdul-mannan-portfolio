@@ -1,0 +1,153 @@
+{
+  "profile": {
+    "name": "Abdul Mannan",
+    "role": "Software Engineering Student",
+    "location": "Multan, Pakistan",
+    "availability": "Open to internships & collaborations",
+    "headline": "Thoughtful code.",
+    "accent": "Real-world impact.",
+    "intro": "I build for the web, connect the physical world, and follow the ideas that make me curious.",
+    "about": "I’m Abdul, a software engineering student at COMSATS University Islamabad, Sahiwal Campus. I enjoy turning an idea into something people can actually use—from a considered interface to the logic behind it.\n\nMy work brings together full-stack development, mobile apps and connected hardware. Lately, I’ve been building GRIDMOTE and exploring AI, automation and the next generation of the web.",
+    "email": "Comsian061@gmail.com",
+    "github": "https://github.com/Abdul-Mannan-061",
+    "linkedin": "",
+    "photo": "/media/f3b6c78d-e55f-4859-ab1f-07af36638b15.png",
+    "resume": ""
+  },
+  "education": {
+    "institution": "COMSATS University Islamabad",
+    "degree": "BS Software Engineering",
+    "campus": "Sahiwal Campus",
+    "startYear": 2024,
+    "endYear": 2028,
+    "semester": 5
+  },
+  "projects": [
+    {
+      "id": "gridmote",
+      "title": "GRIDMOTE",
+      "category": "Mobile & IoT",
+      "year": "2026",
+      "summary": "From a custom interface to a real-world response. A Flutter control app for Arduino.",
+      "detail": "GRIDMOTE pairs a custom web layout editor with a Flutter Android app. Layouts are exported as JSON, imported into the app, and used to control an Arduino over Bluetooth.\n\nThe project brings together reusable interface components, local project storage, device discovery and live controls. It is an ongoing Mobile Application Development project.",
+      "role": "Student project · Interface & app development",
+      "status": "In development",
+      "tech": [
+        "Flutter",
+        "Dart",
+        "Arduino",
+        "Bluetooth"
+      ],
+      "visual": "gridmote",
+      "cover": "",
+      "demo": "",
+      "repo": ""
+    },
+    {
+      "id": "bus-ticket",
+      "title": "A better way to book.",
+      "category": "Web development",
+      "year": "2025",
+      "summary": "A bus ticket management system built around clear booking flows and structured data.",
+      "detail": "A two-person database project covering bus schedules, reservations and ticket records. The work connects an HTML/CSS interface with a SQL database, using XAMPP and phpMyAdmin.\n\nThe project explores entity relationships, normalized tables and the path from a database design to a usable booking interface.",
+      "role": "Academic project · Team of two",
+      "status": "Academic project",
+      "tech": [
+        "HTML",
+        "CSS",
+        "SQL"
+      ],
+      "visual": "transit",
+      "cover": "",
+      "demo": "",
+      "repo": ""
+    },
+    {
+      "id": "gesture-car",
+      "title": "Movement becomes direction.",
+      "category": "AI & automation",
+      "year": "2026",
+      "summary": "A gesture-controlled robotic car that translates hand movement into physical motion.",
+      "detail": "A collaborative hardware project exploring a gesture-driven interface. An MPU6050 motion sensor captures movement, with ESP32-based control and wireless communication connecting the transmitter to the car.\n\nThe focus is the complete feedback loop: sensing, interpreting movement and controlling hardware.",
+      "role": "Academic project · Five-person team",
+      "status": "Academic project",
+      "tech": [
+        "ESP32",
+        "MPU6050",
+        "IoT"
+      ],
+      "visual": "robot",
+      "cover": "",
+      "demo": "",
+      "repo": ""
+    }
+  ],
+  "experience": [
+    {
+      "id": "tara",
+      "role": "Full Stack Developer & AI Intern",
+      "company": "Tara Technologies Pvt Ltd · Lahore",
+      "period": "2026 · Two-month internship",
+      "description": "Hands-on work across web development, databases, AI concepts and connected systems. Built with MERN and explored PHP, WordPress and IoT workflows."
+    }
+  ],
+  "highlights": [
+    {
+      "id": "internship",
+      "title": "From learning to building.",
+      "issuer": "Tara Technologies Pvt Ltd",
+      "date": "2026",
+      "kind": "Milestone",
+      "description": "Completed a two-month Full Stack Development & AI internship, guided by Hafiz Furqan Tahir.",
+      "attachment": "",
+      "credential": "",
+      "fingerprint": ""
+    },
+    {
+      "id": "azure",
+      "title": "A foundation in the cloud.",
+      "issuer": "Microsoft Learn",
+      "date": "October 2026",
+      "kind": "Milestone",
+      "description": "Completed learning modules on the shared responsibility model and cloud models as part of Azure Fundamentals learning.",
+      "attachment": "",
+      "credential": "",
+      "fingerprint": ""
+    }
+  ],
+  "skills": [
+    {
+      "id": "web",
+      "title": "Web & interfaces",
+      "items": [
+        "React",
+        "JavaScript",
+        "HTML & CSS",
+        "Tailwind CSS",
+        "WordPress"
+      ]
+    },
+    {
+      "id": "logic",
+      "title": "Logic & data",
+      "items": [
+        "Python",
+        "Java",
+        "Node.js",
+        "PHP",
+        "SQL"
+      ]
+    },
+    {
+      "id": "beyond",
+      "title": "Beyond the browser",
+      "items": [
+        "Flutter",
+        "Arduino",
+        "ESP32",
+        "Git & GitHub"
+      ]
+    }
+  ],
+  "labEnabled": true
+}
