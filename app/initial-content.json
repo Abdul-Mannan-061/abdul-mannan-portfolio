@@ -7,12 +7,10 @@
     "headline": "Thoughtful code.",
     "accent": "Real-world impact.",
     "intro": "I build for the web, connect the physical world, and follow the ideas that make me curious.",
-    "about": "I’m Abdul, a software engineering student at COMSATS University Islamabad, Sahiwal Campus. I enjoy turning an idea into something people can actually use—from a considered interface to the logic behind it.\n\nMy work brings together full-stack development, mobile apps and connected hardware. Lately, I’ve been building GRIDMOTE and exploring AI, automation and the next generation of the web.",
+    "about": "I’m Abdul Mannan, a software engineering student at COMSATS University Islamabad, Sahiwal Campus. I enjoy turning an idea into something people can actually use—from a considered interface to the logic behind it.\n\nMy work brings together full-stack development, mobile apps and connected hardware. Lately, I’ve been building GRIDMOTE and exploring AI, automation and the next generation of the web.",
     "email": "Comsian061@gmail.com",
     "github": "https://github.com/Abdul-Mannan-061",
-    "linkedin": "",
-    "photo": "/media/f3b6c78d-e55f-4859-ab1f-07af36638b15.png",
-    "resume": ""
+    "photo": "/media/f3b6c78d-e55f-4859-ab1f-07af36638b15.png"
   },
   "education": {
     "institution": "COMSATS University Islamabad",
@@ -28,58 +26,49 @@
       "title": "GRIDMOTE",
       "category": "Mobile & IoT",
       "year": "2026",
+      "status": "In development",
+      "role": "Student project · Interface & app development",
       "summary": "From a custom interface to a real-world response. A Flutter control app for Arduino.",
       "detail": "GRIDMOTE pairs a custom web layout editor with a Flutter Android app. Layouts are exported as JSON, imported into the app, and used to control an Arduino over Bluetooth.\n\nThe project brings together reusable interface components, local project storage, device discovery and live controls. It is an ongoing Mobile Application Development project.",
-      "role": "Student project · Interface & app development",
-      "status": "In development",
       "tech": [
         "Flutter",
         "Dart",
         "Arduino",
         "Bluetooth"
       ],
-      "visual": "gridmote",
-      "cover": "",
-      "demo": "",
-      "repo": ""
+      "visual": "gridmote"
     },
     {
       "id": "4e4c76ca-0946-47b9-9fc6-773b99df611a",
       "title": "A better way to book.",
       "category": "Web development",
       "year": "2025",
+      "status": "Academic project",
+      "role": "Academic project · Team of two",
       "summary": "A bus ticket management system built around clear booking flows and structured data.",
       "detail": "A two-person database project covering bus schedules, reservations and ticket records. The work connects an HTML/CSS interface with a SQL database, using XAMPP and phpMyAdmin.\n\nThe project explores entity relationships, normalized tables and the path from a database design to a usable booking interface.",
-      "role": "Academic project · Team of two",
-      "status": "Academic project",
       "tech": [
         "HTML",
         "CSS",
         "SQL"
       ],
-      "visual": "transit",
-      "cover": "",
-      "demo": "",
-      "repo": ""
+      "visual": "transit"
     },
     {
       "id": "91e78cfb-e27c-44c1-8746-76512a740e17",
       "title": "Movement becomes direction.",
       "category": "AI & automation",
       "year": "2026",
+      "status": "Academic project",
+      "role": "Academic project · Five-person team",
       "summary": "A gesture-controlled robotic car that translates hand movement into physical motion.",
       "detail": "A collaborative hardware project exploring a gesture-driven interface. An MPU6050 motion sensor captures movement, with ESP32-based control and wireless communication connecting the transmitter to the car.\n\nThe focus is the complete feedback loop: sensing, interpreting movement and controlling hardware.",
-      "role": "Academic project · Five-person team",
-      "status": "Academic project",
       "tech": [
         "ESP32",
         "MPU6050",
         "IoT"
       ],
-      "visual": "robot",
-      "cover": "",
-      "demo": "",
-      "repo": ""
+      "visual": "robot"
     }
   ],
   "experience": [
@@ -98,10 +87,7 @@
       "issuer": "Tara Technologies Pvt Ltd",
       "date": "2026",
       "kind": "Milestone",
-      "description": "Completed a two-month Full Stack Development & AI internship, guided by Hafiz Furqan Tahir.",
-      "attachment": "",
-      "credential": "",
-      "fingerprint": ""
+      "description": "Completed a two-month Full Stack Development & AI internship, guided by Hafiz Furqan Tahir."
     },
     {
       "id": "30db9e90-01c5-424b-ae00-defa91fdb6f1",
@@ -109,10 +95,7 @@
       "issuer": "Microsoft Learn",
       "date": "October 2026",
       "kind": "Milestone",
-      "description": "Completed learning modules on the shared responsibility model and cloud models as part of Azure Fundamentals learning.",
-      "attachment": "",
-      "credential": "",
-      "fingerprint": ""
+      "description": "Completed learning modules on the shared responsibility model and cloud models as part of Azure Fundamentals learning."
     }
   ],
   "skills": [
