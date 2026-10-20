@@ -35,7 +35,7 @@ Work in the new `abdul-mannan-portfolio-pages` folder. Node.js 24 is supported.
 
 ```powershell
 git pull --ff-only origin main
-npm install
+npm ci
 npm run dev
 ```
 

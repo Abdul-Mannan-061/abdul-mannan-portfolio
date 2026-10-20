@@ -26,13 +26,7 @@ jobs:
         with:
           node-version: '24'
       - name: Install dependencies
-        run: |
-          if [ -f package-lock.json ]; then
-            npm ci --no-audit --no-fund
-          else
-            npm install --no-audit --no-fund
-            node -e "console.log('PORTFOLIO_LOCK_START'); console.log(require('fs').readFileSync('package-lock.json','utf8')); console.log('PORTFOLIO_LOCK_END')"
-          fi
+        run: npm ci --no-audit --no-fund
       - name: Check types, validate content and build static HTML
         run: npm run build
       - name: Upload website
