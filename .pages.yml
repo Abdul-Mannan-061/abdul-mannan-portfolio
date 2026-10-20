@@ -1,0 +1,497 @@
+# Visual content editor: https://app.pagescms.org
+# Files and images are saved to this repository; GitHub Actions publishes the site.
+media:
+  input: "public/media"
+  output: "/media"
+  rename: "safe"
+  extensions:
+    - "png"
+    - "jpg"
+    - "jpeg"
+    - "webp"
+    - "pdf"
+content:
+  -
+    name: "portfolio"
+    label: "Edit portfolio"
+    type: "file"
+    path: "app/initial-content.json"
+    format: "json"
+    description: "Save to publish through GitHub Actions. The updated website appears after a successful deployment; refresh the portfolio to see it."
+    operations:
+      create: false
+      rename: false
+      delete: false
+    fields:
+      -
+        name: "profile"
+        label: "Profile & contact"
+        type: "object"
+        fields:
+          -
+            name: "name"
+            label: "Your name"
+            type: "string"
+            required: true
+            options:
+              maxlength: 300
+          -
+            name: "role"
+            label: "Role"
+            type: "string"
+            required: true
+            options:
+              maxlength: 300
+          -
+            name: "location"
+            label: "Location"
+            type: "string"
+            options:
+              maxlength: 300
+          -
+            name: "availability"
+            label: "Availability"
+            type: "string"
+            options:
+              maxlength: 300
+          -
+            name: "headline"
+            label: "Headline — first line"
+            type: "string"
+            required: true
+            options:
+              maxlength: 300
+          -
+            name: "accent"
+            label: "Headline — accent line"
+            type: "string"
+            required: true
+            options:
+              maxlength: 300
+          -
+            name: "intro"
+            label: "Short introduction"
+            type: "text"
+            options:
+              maxlength: 5000
+          -
+            name: "about"
+            label: "About you"
+            type: "text"
+            options:
+              maxlength: 5000
+            description: "Use a blank line between paragraphs."
+          -
+            name: "email"
+            label: "Email"
+            type: "string"
+            pattern:
+              regex: "^([^\\s@]+@[^\\s@]+\\.[^\\s@]+)?$"
+              message: "Use a valid email address, or leave it empty."
+          -
+            name: "github"
+            label: "GitHub"
+            type: "string"
+            description: "Optional. Use the full https:// link."
+            pattern:
+              regex: "^(https://[^\\s]+)?$"
+              message: "Use a complete https:// link, or leave this empty."
+          -
+            name: "linkedin"
+            label: "LinkedIn"
+            type: "string"
+            description: "Optional. Use the full https:// link."
+            pattern:
+              regex: "^(https://[^\\s]+)?$"
+              message: "Use a complete https:// link, or leave this empty."
+          -
+            name: "photo"
+            label: "Portrait"
+            type: "image"
+            options:
+              extensions:
+                - "png"
+                - "jpg"
+                - "jpeg"
+                - "webp"
+              rename: "safe"
+            description: "Upload a JPG, PNG or WebP photo."
+          -
+            name: "resume"
+            label: "Résumé"
+            type: "file"
+            options:
+              extensions:
+                - "pdf"
+                - "png"
+                - "jpg"
+                - "jpeg"
+                - "webp"
+              rename: "safe"
+            description: "Upload your résumé as a PDF."
+      -
+        name: "education"
+        label: "Education & semester"
+        type: "object"
+        fields:
+          -
+            name: "institution"
+            label: "University"
+            type: "string"
+            options:
+              maxlength: 300
+          -
+            name: "degree"
+            label: "Degree"
+            type: "string"
+            options:
+              maxlength: 300
+          -
+            name: "campus"
+            label: "Campus"
+            type: "string"
+            options:
+              maxlength: 300
+          -
+            name: "startYear"
+            label: "Start year"
+            type: "number"
+            required: true
+            options:
+              min: 1900
+              max: 2200
+          -
+            name: "endYear"
+            label: "Graduation year"
+            type: "number"
+            required: true
+            options:
+              min: 1900
+              max: 2200
+          -
+            name: "semester"
+            label: "Current semester"
+            type: "select"
+            required: true
+            options:
+              values:
+                -
+                  name: "1"
+                  label: "1st semester"
+                -
+                  name: "2"
+                  label: "2nd semester"
+                -
+                  name: "3"
+                  label: "3rd semester"
+                -
+                  name: "4"
+                  label: "4th semester"
+                -
+                  name: "5"
+                  label: "5th semester"
+                -
+                  name: "6"
+                  label: "6th semester"
+                -
+                  name: "7"
+                  label: "7th semester"
+                -
+                  name: "8"
+                  label: "8th semester"
+                -
+                  name: "9"
+                  label: "Graduated — all 8 completed"
+            description: "Choose the semester you are currently studying. Choose Graduated after completing the 8th semester."
+      -
+        name: "projects"
+        label: "Projects"
+        type: "object"
+        list:
+          max: 40
+          collapsible:
+            collapsed: true
+            summary: "{title}"
+        fields:
+          -
+            name: "id"
+            label: "Entry ID"
+            type: "uuid"
+            hidden: true
+            options:
+              editable: false
+              generate: false
+          -
+            name: "title"
+            label: "Project title"
+            type: "string"
+            required: true
+            options:
+              maxlength: 300
+          -
+            name: "category"
+            label: "Category"
+            type: "select"
+            required: true
+            options:
+              values:
+                - "Mobile & IoT"
+                - "Web development"
+                - "AI & automation"
+                - "Web3"
+          -
+            name: "year"
+            label: "Year"
+            type: "string"
+            options:
+              maxlength: 300
+          -
+            name: "status"
+            label: "Status"
+            type: "string"
+            options:
+              maxlength: 300
+          -
+            name: "role"
+            label: "Your role"
+            type: "string"
+            options:
+              maxlength: 300
+          -
+            name: "summary"
+            label: "Short summary"
+            type: "text"
+            options:
+              maxlength: 5000
+          -
+            name: "detail"
+            label: "Project details"
+            type: "text"
+            options:
+              maxlength: 5000
+            description: "Use blank lines between paragraphs."
+          -
+            name: "tech"
+            label: "Technologies"
+            type: "string"
+            list:
+              max: 20
+              collapsible: false
+            options:
+              maxlength: 300
+          -
+            name: "visual"
+            label: "Built-in illustration"
+            type: "select"
+            required: true
+            options:
+              values:
+                -
+                  name: "custom"
+                  label: "Simple code illustration"
+                -
+                  name: "gridmote"
+                  label: "GRIDMOTE mobile + hardware"
+                -
+                  name: "transit"
+                  label: "Bus booking interface"
+                -
+                  name: "robot"
+                  label: "Robotic car"
+            default: "custom"
+          -
+            name: "cover"
+            label: "Custom cover image"
+            type: "image"
+            options:
+              extensions:
+                - "png"
+                - "jpg"
+                - "jpeg"
+                - "webp"
+              rename: "safe"
+            description: "Optional. An uploaded image replaces the built-in illustration."
+          -
+            name: "demo"
+            label: "Live project"
+            type: "string"
+            description: "Optional. Use the full https:// link."
+            pattern:
+              regex: "^(https://[^\\s]+)?$"
+              message: "Use a complete https:// link, or leave this empty."
+          -
+            name: "repo"
+            label: "Source repository"
+            type: "string"
+            description: "Optional. Use the full https:// link."
+            pattern:
+              regex: "^(https://[^\\s]+)?$"
+              message: "Use a complete https:// link, or leave this empty."
+      -
+        name: "experience"
+        label: "Experience"
+        type: "object"
+        list:
+          max: 20
+          collapsible:
+            collapsed: true
+            summary: "{role}"
+        fields:
+          -
+            name: "id"
+            label: "Entry ID"
+            type: "uuid"
+            hidden: true
+            options:
+              editable: false
+              generate: false
+          -
+            name: "role"
+            label: "Role"
+            type: "string"
+            required: true
+            options:
+              maxlength: 300
+          -
+            name: "company"
+            label: "Company / organisation"
+            type: "string"
+            options:
+              maxlength: 300
+          -
+            name: "period"
+            label: "Period"
+            type: "string"
+            options:
+              maxlength: 300
+          -
+            name: "description"
+            label: "Description"
+            type: "text"
+            options:
+              maxlength: 5000
+      -
+        name: "highlights"
+        label: "Achievements & certificates"
+        type: "object"
+        list:
+          max: 60
+          collapsible:
+            collapsed: true
+            summary: "{title}"
+        fields:
+          -
+            name: "id"
+            label: "Entry ID"
+            type: "uuid"
+            hidden: true
+            options:
+              editable: false
+              generate: false
+          -
+            name: "title"
+            label: "Title"
+            type: "string"
+            required: true
+            options:
+              maxlength: 300
+          -
+            name: "issuer"
+            label: "Issuer / organisation"
+            type: "string"
+            options:
+              maxlength: 300
+          -
+            name: "date"
+            label: "Date"
+            type: "string"
+            options:
+              maxlength: 300
+          -
+            name: "kind"
+            label: "Type"
+            type: "select"
+            required: true
+            options:
+              values:
+                - "Milestone"
+                - "Certificate"
+                - "Achievement"
+            default: "Certificate"
+          -
+            name: "description"
+            label: "Description"
+            type: "text"
+            options:
+              maxlength: 5000
+          -
+            name: "attachment"
+            label: "Certificate / document"
+            type: "file"
+            options:
+              extensions:
+                - "pdf"
+                - "png"
+                - "jpg"
+                - "jpeg"
+                - "webp"
+              rename: "safe"
+            description: "Upload a PDF, JPG, PNG or WebP."
+          -
+            name: "credential"
+            label: "Issuer verification link"
+            type: "string"
+            description: "Optional. Use the full https:// link."
+            pattern:
+              regex: "^(https://[^\\s]+)?$"
+              message: "Use a complete https:// link, or leave this empty."
+          -
+            name: "fingerprint"
+            label: "SHA-256 fingerprint (optional)"
+            type: "string"
+            description: "Optional file comparison. Use the Web3 lab to calculate the uploaded file's 64-character hash, then paste it here."
+            pattern:
+              regex: "^([a-f0-9]{64})?$"
+              message: "Use a lowercase 64-character SHA-256 hash, or leave it empty."
+      -
+        name: "skills"
+        label: "Skill groups"
+        type: "object"
+        list:
+          max: 12
+          collapsible:
+            collapsed: true
+            summary: "{title}"
+        fields:
+          -
+            name: "id"
+            label: "Entry ID"
+            type: "uuid"
+            hidden: true
+            options:
+              editable: false
+              generate: false
+          -
+            name: "title"
+            label: "Group title"
+            type: "string"
+            required: true
+            options:
+              maxlength: 300
+          -
+            name: "items"
+            label: "Skills"
+            type: "string"
+            list:
+              max: 40
+              collapsible: false
+            options:
+              maxlength: 300
+      -
+        name: "labEnabled"
+        label: "Show the Web3 lab"
+        type: "boolean"
+        default: true
+settings:
+  content:
+    merge: true

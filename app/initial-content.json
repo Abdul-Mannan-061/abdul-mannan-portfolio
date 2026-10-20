@@ -20,11 +20,11 @@
     "campus": "Sahiwal Campus",
     "startYear": 2024,
     "endYear": 2028,
-    "semester": 5
+    "semester": "5"
   },
   "projects": [
     {
-      "id": "gridmote",
+      "id": "56797610-961a-444a-86de-6ab53e90318c",
       "title": "GRIDMOTE",
       "category": "Mobile & IoT",
       "year": "2026",
@@ -44,7 +44,7 @@
       "repo": ""
     },
     {
-      "id": "bus-ticket",
+      "id": "4e4c76ca-0946-47b9-9fc6-773b99df611a",
       "title": "A better way to book.",
       "category": "Web development",
       "year": "2025",
@@ -63,7 +63,7 @@
       "repo": ""
     },
     {
-      "id": "gesture-car",
+      "id": "91e78cfb-e27c-44c1-8746-76512a740e17",
       "title": "Movement becomes direction.",
       "category": "AI & automation",
       "year": "2026",
@@ -84,7 +84,7 @@
   ],
   "experience": [
     {
-      "id": "tara",
+      "id": "c331cebc-c7fb-4ab3-bdb3-95cf6718f2db",
       "role": "Full Stack Developer & AI Intern",
       "company": "Tara Technologies Pvt Ltd · Lahore",
       "period": "2026 · Two-month internship",
@@ -93,7 +93,7 @@
   ],
   "highlights": [
     {
-      "id": "internship",
+      "id": "6dbaa430-75fa-4890-935c-1c6c64049b26",
       "title": "From learning to building.",
       "issuer": "Tara Technologies Pvt Ltd",
       "date": "2026",
@@ -104,7 +104,7 @@
       "fingerprint": ""
     },
     {
-      "id": "azure",
+      "id": "30db9e90-01c5-424b-ae00-defa91fdb6f1",
       "title": "A foundation in the cloud.",
       "issuer": "Microsoft Learn",
       "date": "October 2026",
@@ -117,7 +117,7 @@
   ],
   "skills": [
     {
-      "id": "web",
+      "id": "1a417302-0afc-43a6-9529-b412f0829ec4",
       "title": "Web & interfaces",
       "items": [
         "React",
@@ -128,7 +128,7 @@
       ]
     },
     {
-      "id": "logic",
+      "id": "9df39a02-a5ae-40f5-8655-69f693a3fab5",
       "title": "Logic & data",
       "items": [
         "Python",
@@ -139,7 +139,7 @@
       ]
     },
     {
-      "id": "beyond",
+      "id": "5778a1a7-7723-48d2-b795-af3eec33b5d6",
       "title": "Beyond the browser",
       "items": [
         "Flutter",
